@@ -8,7 +8,7 @@ export function EmptyPastes({ message = "No pastes yet", action }) {
         <Code2 size={28} className="text-text-muted" />
       </div>
       <h3 className="text-text-primary font-medium mb-1">{message}</h3>
-      <p className="text-text-secondary text-sm mb-4">Create your first paste to get starte.</p>
+      <p className="text-text-secondary text-sm mb-4">Create your first paste to get started.</p>
       {action ?? (
         <Link to="/new" className="btn-primary">Create Paste</Link>
       )}
