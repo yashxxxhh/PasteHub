@@ -12,7 +12,7 @@ from app.models.user import User
 
 SECRET_KEY = os.getenv("SECRET_KEY", "change-me-in-production-use-a-long-random-string")
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 7 days
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 10  # 7 days
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 bearer_scheme = HTTPBearer(auto_error=False)
